@@ -5,6 +5,10 @@ from stagemarkt_scraper.spiders.organization_parse_utils import parse_organizati
 
 
 class StagemarktOrganizationsSpider(scrapy.Spider):
+    """
+    Spider to scrape all organizations
+    """
+
     name = "stagemarkt_organizations"
     allowed_domains = ["stagemarkt.nl"]
     base_url = "https://stagemarkt.nl/leerbedrijven/?Termen=&PlaatsPostcode=&Straal=0&Land=00000000-0000-0000-0000-000000000000&ZoekenIn=A&Longitude=&Latitude=&Regio=&Plaats=&Niveau=&SBI=&Kwalificatie=&Sector=&RandomSeed=648&Leerweg=&Bedrijfsgrootte=&Opleidingsgebied=&Internationaal=&Beschikbaarheid=&AlleWerkprocessenUitvoerbaar=&LeerplaatsGewijzigd=&Sortering=0&Bron=ORG&Focus=&LeerplaatsKenmerk=&OrganisatieKenmerk=&Page="

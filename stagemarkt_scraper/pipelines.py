@@ -11,6 +11,11 @@ from stagemarkt_scraper import items
 
 
 class StagemarktScraperPipeline:
+
+    """
+    Pipeline to save jobs, contacts and organizations into their corresponding csv.
+    """
+
     def __init__(self):
         self.org_file = 'organizations.csv'
         self.contact_file = 'contacts.csv'

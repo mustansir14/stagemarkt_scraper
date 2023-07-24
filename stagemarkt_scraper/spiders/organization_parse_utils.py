@@ -3,6 +3,9 @@ from stagemarkt_scraper.items import Organization
 
 
 def parse_organization_info_bar(response: HtmlResponse) -> Organization:
+    """
+    A utility function to parse organization info from the info side bar. Multiple spiders utilize this functionality hence seperated it out.
+    """
 
     organization = Organization()
     organization["organization_owner"] = "contact@internshipmatching.com"
